@@ -1,0 +1,35 @@
+CHOICE OF IMPLEMENTATION:
+
+Considering the available technology and knowledge I had, I chose to do the Twitter API Integration.  Considering I only had a Mac OSX machine, it eliminated the .NET application as a possibility.  I couldn't determine how to implement the required library for the Watermark application in a C/C++ application, so that eliminated the Watermark. 
+
+This left me with the three web-based applications.  I am not entirely comfortable with using the canvas tools outside of the e2d library, and I know the horrors of trying to get emails sent from a generic webserver, and actually have them recieved by the recipient; especially when they have images in them.  I do have experience working with an Authentication server, but I used the UserFrosting library (http://www.userfrosting.com/), which came with its own authentication server.  I also remember how complicated and intricate such a server was in creation.  I was not confident that I could do all I could in order to make sure the authentication server was robust and airtight in the time alotted.  
+
+Therefore, I chose the Twitter Search application.  I had no experience with the Twitter API before, but I was confident I could familiarize myself with the necessary API calls to make the application work.  
+
+I did not need to reinvent the wheel, so I used a Twitter API implementation that was linked on the Twitter Development page (https://dev.twitter.com/resources/twitter-libraries).  I selected a PHP installation (MAMP), as that is the backend language I am most familiar with, and the backend language I used most recently.  
+
+I attempted to implement a Typeahead instance to load a latitude/longitude from a city name.  As I was having trouble accessing MAMP's MySQL installation, I attempted to pull the full source of the MaxMind database of US Cities in, asynchronously, for the typeahead, but ran into size issues.  If this were a full application with a dedicated server designed to be run on remote clients, I would have crafted a MySQL query to pull city/state values from a MySQL database, and only sent to the user 10 valid city/state responses and their associated lat/long at a time.  
+
+TECHNOLOGY AND SOFTWARE USED: 
+
+Apple MacBook Pro using OSX Sierra, 10.12.3
+MAMP 4.4.1 Running PHP 7.1.1
+Twitter Bootstrap 3.3.7 (http://getbootstrap.com/)
+Twitter Typeahead 0.11.1 (https://twitter.github.io/typeahead.js/) (License at ./js/LICENSE_TYPEAHEAD)
+jublonet/codebird-php, Twitter API PHP Implementation by Jublo Solutions, released under GNU General Public License (v3) (https://github.com/jublonet/codebird-php) (License at ./plugins/codebird-php/LICENSE)
+
+This product includes data created by MaxMind, available from http://www.maxmind.com/
+The License for the database fragment is can be found in ./data/LICENSE_WC.txt
+
+SETUP:
+
+In MAMP, set the document root to the twittersearch root, and start the server.
+
+RUNNING:
+
+In a browser of choice, navigate to: http://localhost:8888/index.php
+
+UNIT TESTS: 
+
+In a browser of choice, navigate to: http://localhost:8888/test.php
+Enter in values and click the successive buttons to engage the designated tests.

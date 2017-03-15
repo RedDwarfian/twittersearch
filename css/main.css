@@ -1,0 +1,48 @@
+html {
+	height:100%;
+}
+
+body {
+	background: #eeeef2;
+	height:100%;
+}
+
+body .container {
+	height:100%;
+}
+
+body .container>.row {
+	height:100%;
+}
+
+body .background-cover {
+	background: #fff;
+	min-height:100%;
+}
+
+.tweet_wrapper {
+	position:relative;
+	max-width: 550px;
+	margin-left: auto;
+	margin-right:auto;
+}
+
+.tweet_wrapper .close {
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	border-radius: 4px;
+	padding: 0px 5px 3px;
+	background: transparent;
+	color: #000;
+}
+
+.tweet_wrapper .close:hover {
+	background: rgba(0,0,0,0.2);
+	color: #000;
+}
+
+.twitter_hideable {
+	border-radius: 4px;
+	padding: 5px;
+}
