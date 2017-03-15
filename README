@@ -15,7 +15,7 @@ TECHNOLOGY AND SOFTWARE USED:
 Apple MacBook Pro using OSX Sierra, 10.12.3
 MAMP 4.4.1 Running PHP 7.1.1
 Twitter Bootstrap 3.3.7 (http://getbootstrap.com/)
-Twitter Typeahead 0.11.1 (https://twitter.github.io/typeahead.js/) (License at ./js/LICENSE_TYPEAHEAD)
+(UNIMPLEMENTED) Twitter Typeahead 0.11.1 (https://twitter.github.io/typeahead.js/) (License at ./js/LICENSE_TYPEAHEAD)
 jublonet/codebird-php, Twitter API PHP Implementation by Jublo Solutions, released under GNU General Public License (v3) (https://github.com/jublonet/codebird-php) (License at ./plugins/codebird-php/LICENSE)
 
 This product includes data created by MaxMind, available from http://www.maxmind.com/

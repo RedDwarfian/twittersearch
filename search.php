@@ -109,7 +109,7 @@ if(count($searchArr) === 0) {
 	}
 	$tweetResponse = $codebirdie->search_tweets($searchStr);
 	$response = [];
-	$response['full_test'] = $tweetResponse;
+	// $response['full_test'] = $tweetResponse;
 	$tweetIdArr = [];
 	$response['successes'] = 0;
 	// TODO GET max_id from next_results url string. 
