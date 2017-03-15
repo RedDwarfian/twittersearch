@@ -45,4 +45,6 @@ body .background-cover {
 .twitter_hideable {
 	border-radius: 4px;
 	padding: 5px;
+	font-size: 16px;
+	text-align:center;
 }
